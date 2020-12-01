@@ -1,6 +1,9 @@
 # boilerplate-unittesting
 Simple UnitTesting project for student at DAW/ED subject  (desarrollo de aplicaciones web - entornos de desarrollo)
 
+# TODO: Nombre del alumno
+# TODO: Selfassesment mark: 0p
+
 ## Contents: 
 - Maven
 - Spring boot
