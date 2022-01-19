@@ -1,5 +1,6 @@
 package com.studentsfp.devenvironment.unittesting;
 
+import com.studentsfp.devenvironment.unittesting.data.Virus;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
@@ -14,4 +15,10 @@ class UnittestingApplicationTests {
         Assert.doesNotContain(message, place+".", "¡Quijote te mienten con la provincia!");
     }
 
+    @Test
+    void virusCreationTest(){
+        Virus virus = new Virus("COVID-19",false);
+        Virus virus1 = new Virus();
+        Assert.isTrue(!virus.isLetal(),"El virus no puede ser letal de inicio");
+    }
 }
